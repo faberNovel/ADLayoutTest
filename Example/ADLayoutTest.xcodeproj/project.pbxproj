@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DF201382902215BE9FD7272 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		395731B969F5EDBD10E89588 /* ADLayoutTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ADLayoutTest.podspec; path = ../ADLayoutTest.podspec; sourceTree = "<group>"; };
+		1DF201382902215BE9FD7272 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		395731B969F5EDBD10E89588 /* ADLayoutTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADLayoutTest.podspec; path = ../ADLayoutTest.podspec; sourceTree = "<group>"; };
 		4378D7FDCBC09506A6E101AA /* Pods_ADLayoutTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADLayoutTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B74A444552EC4404E671251 /* Pods-ADLayoutTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Tests/Pods-ADLayoutTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A3CDD721BCB71C66DD1A788 /* Pods-ADLayoutTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Example.release.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Example/Pods-ADLayoutTest_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* ADLayoutTest_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADLayoutTest_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7B87BDEFC91F0E2B3A96B495 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7B87BDEFC91F0E2B3A96B495 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A5A1E04CD657E1BEDC454280 /* Pods-ADLayoutTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Example/Pods-ADLayoutTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C85ACEB8804B52BD77AD5B47 /* Pods_ADLayoutTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADLayoutTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE56A960806F14779B780020 /* Pods-ADLayoutTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Tests/Pods-ADLayoutTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 				4B74A444552EC4404E671251 /* Pods-ADLayoutTest_Tests.debug.xcconfig */,
 				CE56A960806F14779B780020 /* Pods-ADLayoutTest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -482,13 +482,16 @@
 			baseConfigurationReference = A5A1E04CD657E1BEDC454280 /* Pods-ADLayoutTest_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ADLayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.applidium.ADLayoutTest-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -497,13 +500,16 @@
 			baseConfigurationReference = 5A3CDD721BCB71C66DD1A788 /* Pods-ADLayoutTest_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ADLayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.applidium.ADLayoutTest-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -511,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4B74A444552EC4404E671251 /* Pods-ADLayoutTest_Tests.debug.xcconfig */;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -523,9 +530,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADLayoutTest_Example.app/ADLayoutTest_Example";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -533,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE56A960806F14779B780020 /* Pods-ADLayoutTest_Tests.release.xcconfig */;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,9 +551,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ADLayoutTest_Example.app/ADLayoutTest_Example";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

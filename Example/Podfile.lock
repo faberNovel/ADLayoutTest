@@ -1,0 +1,16 @@
+PODS:
+  - ADLayoutTest (0.1.0)
+
+DEPENDENCIES:
+  - ADLayoutTest (from `../`)
+
+EXTERNAL SOURCES:
+  ADLayoutTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADLayoutTest: 0ee4456e2dc37b08583b807a0d9083a87c0c8ac8
+
+PODFILE CHECKSUM: c348d414cae605b9604bef2ce5ec693d137be2c9
+
+COCOAPODS: 1.6.1
