@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ADLayoutTest_Example' do
+  pod 'ADLayoutTest', :path => '../'
+
+  target 'ADLayoutTest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
