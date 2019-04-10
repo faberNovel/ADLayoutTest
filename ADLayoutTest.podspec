@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Pierre Felgines/ADLayoutTest.git', :tag => "#v{s.version}" }
   s.ios.deployment_target = '9.0'
   s.source_files = 'ADLayoutTest/Classes/**/*'
-  s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'XCTest'
+  s.dependency 'ADAssertLayout', '~> 0.1'
+  s.dependency 'SwiftCheck', '~> 0.12'
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
