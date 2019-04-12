@@ -10,6 +10,9 @@
 		49CE86EE22608603004AF23B /* BasicGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */; };
 		2763CD45DF4C208CF194F65B /* Pods_ADLayoutTest_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF75C1BCF5321711828C6E2 /* Pods_ADLayoutTest_ExampleTests.framework */; };
 		49CE86E022607A26004AF23B /* ADLayoutTest_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE86DF22607A26004AF23B /* ADLayoutTest_ExampleTests.swift */; };
+		49CE86E822607CA0004AF23B /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE86E722607CA0004AF23B /* ExampleView.swift */; };
+		49CE86EA22607CA9004AF23B /* ExampleViewValid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CE86E922607CA9004AF23B /* ExampleViewValid.xib */; };
+		49CE86EC2260827B004AF23B /* ExampleViewError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CE86EB2260827B004AF23B /* ExampleViewError.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 		49CE86DD22607A26004AF23B /* ADLayoutTest_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADLayoutTest_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CE86DF22607A26004AF23B /* ADLayoutTest_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADLayoutTest_ExampleTests.swift; sourceTree = "<group>"; };
 		49CE86E122607A26004AF23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CE86E722607CA0004AF23B /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		49CE86E922607CA9004AF23B /* ExampleViewValid.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleViewValid.xib; sourceTree = "<group>"; };
+		49CE86EB2260827B004AF23B /* ExampleViewError.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewError.xib; sourceTree = "<group>"; };
 		4B74A444552EC4404E671251 /* Pods-ADLayoutTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Tests/Pods-ADLayoutTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A3CDD721BCB71C66DD1A788 /* Pods-ADLayoutTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Example.release.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Example/Pods-ADLayoutTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ADLayoutTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADLayoutTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +137,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				49CE86E722607CA0004AF23B /* ExampleView.swift */,
+				49CE86E922607CA9004AF23B /* ExampleViewValid.xib */,
+				49CE86EB2260827B004AF23B /* ExampleViewError.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -320,7 +329,9 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				49CE86EC2260827B004AF23B /* ExampleViewError.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				49CE86EA22607CA9004AF23B /* ExampleViewValid.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +454,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				49CE86E822607CA0004AF23B /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
