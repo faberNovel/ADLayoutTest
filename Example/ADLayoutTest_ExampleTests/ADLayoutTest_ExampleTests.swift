@@ -113,7 +113,7 @@ class ADLayoutTest_ExampleTests: XCTestCase {
                 as: .image
             )
             // no layout assertions, we just check the generated screenshots
-            return .success(view)
+            return .success // we don't pass the view here because we don't care
         }
     }
 }

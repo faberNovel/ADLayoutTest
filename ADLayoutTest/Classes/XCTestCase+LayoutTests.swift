@@ -50,9 +50,34 @@ extension XCTestCase {
     }
 
     /// Result to pass the current tested view and an error if any
-    public enum ViewAssertionResult {
-        case success(UIView)
-        case failure(UIView, Error)
+    public struct ViewAssertionResult {
+        let view: UIView?
+        let error: Error?
+
+        /// Informs of success, with no associated view.
+        public static let success = ViewAssertionResult(view: nil, error: nil)
+
+        /// Informs of success, with an associated view.
+        ///
+        /// - parameter view: The view snapshotted if the snapshot strategy is `allTests`
+        public static func success(_ view: UIView) -> ViewAssertionResult {
+            return ViewAssertionResult(view: view, error: nil)
+        }
+
+        /// Informs of failure, with no associated view.
+        ///
+        /// - parameter error: The error thrown during the layout test
+        public static func failure(_ error: Error) -> ViewAssertionResult {
+            return ViewAssertionResult(view: nil, error: error)
+        }
+
+        /// Informs of failure, with an associated view.
+        ///
+        /// - parameter view: The view snapshotted after the failure
+        /// - parameter error: The error thrown during the layout test
+        public static func failure(_ view: UIView, _ error: Error) -> ViewAssertionResult {
+            return ViewAssertionResult(view: view, error: error)
+        }
     }
 
     /// Run a layout test. By default, 100 `A` instances will be generated
@@ -96,15 +121,14 @@ extension XCTestCase {
                 maxTestsCount: maxTestsCount
             )
             property(named, arguments: arguments) <- forAll { (a: A) in
-                switch run(a) {
-                case let .success(view):
-                    snapshotView = view
-                    return true
-                case let .failure(view, error):
-                    snapshotView = view
+                let result = run(a)
+                snapshotView = result.view
+                if let error = result.error { // failure
                     layoutError = error as? LayoutError
                     XCTFail(error.localizedDescription, file: file, line: line)
                     return false
+                } else { // success
+                    return true
                 }
             }.withCallback(callback)
         }
