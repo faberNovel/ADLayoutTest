@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CE86EE22608603004AF23B /* BasicGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		1DF201382902215BE9FD7272 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		395731B969F5EDBD10E89588 /* ADLayoutTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ADLayoutTest.podspec; path = ../ADLayoutTest.podspec; sourceTree = "<group>"; };
 		4378D7FDCBC09506A6E101AA /* Pods_ADLayoutTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADLayoutTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGeneratorTests.swift; sourceTree = "<group>"; };
 		4B74A444552EC4404E671251 /* Pods-ADLayoutTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Tests/Pods-ADLayoutTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A3CDD721BCB71C66DD1A788 /* Pods-ADLayoutTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADLayoutTest_Example.release.xcconfig"; path = "Target Support Files/Pods-ADLayoutTest_Example/Pods-ADLayoutTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ADLayoutTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADLayoutTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* RunLayoutTestsTests.swift */,
+				49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CE86EE22608603004AF23B /* BasicGeneratorTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* RunLayoutTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
