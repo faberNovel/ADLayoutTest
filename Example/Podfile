@@ -7,6 +7,10 @@ target 'ADLayoutTest_Example' do
   target 'ADLayoutTest_Tests' do
     inherit! :search_paths
   end
+
+  target 'ADLayoutTest_ExampleTests' do
+    inherit! :search_paths
+  end
 end
 
 post_install do |installer|

@@ -52,6 +52,16 @@
                ReferencedContainer = "container:ADLayoutTest.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "49CE86DC22607A26004AF23B"
+               BuildableName = "ADLayoutTest_ExampleTests.xctest"
+               BlueprintName = "ADLayoutTest_ExampleTests"
+               ReferencedContainer = "container:ADLayoutTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
