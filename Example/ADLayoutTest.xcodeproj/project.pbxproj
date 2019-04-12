@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49CE86EE22608603004AF23B /* BasicGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */; };
 		2763CD45DF4C208CF194F65B /* Pods_ADLayoutTest_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF75C1BCF5321711828C6E2 /* Pods_ADLayoutTest_ExampleTests.framework */; };
 		49CE86E022607A26004AF23B /* ADLayoutTest_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE86DF22607A26004AF23B /* ADLayoutTest_ExampleTests.swift */; };
 		49CE86E822607CA0004AF23B /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE86E722607CA0004AF23B /* ExampleView.swift */; };
 		49CE86EA22607CA9004AF23B /* ExampleViewValid.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CE86E922607CA9004AF23B /* ExampleViewValid.xib */; };
 		49CE86EC2260827B004AF23B /* ExampleViewError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CE86EB2260827B004AF23B /* ExampleViewError.xib */; };
+		49CE86EE22608603004AF23B /* BasicGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CE828F225F2FA9004AF23B /* BasicGeneratorTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
