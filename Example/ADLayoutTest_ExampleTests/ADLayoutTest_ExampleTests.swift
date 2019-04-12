@@ -9,6 +9,7 @@
 import XCTest
 import ADLayoutTest
 import SwiftCheck
+import SnapshotTesting
 @testable import ADLayoutTest_Example
 
 extension UIView {
@@ -91,6 +92,27 @@ class ADLayoutTest_ExampleTests: XCTestCase {
             } catch {
                 return .failure(view, error)
             }
+            return .success(view)
+        }
+    }
+
+    func testExampleViewSavedScreenshots() {
+        runLayoutTests(
+            named: "ExampleView Saved Screenshots",
+            randomStrategy: .consistent, // mandatory to have the same screenshots every time
+            maxTestsCount: 5
+        ) { (viewModel: ExampleViewModel) in
+            let view: ExampleView = ExampleView.fromNib(named: "ExampleViewValid")
+            view.backgroundColor = UIColor.white
+            view.frame = CGRect(x: 0, y: 0, width: 320.0, height: 150.0)
+            view.configure(with: viewModel)
+            view.setNeedsLayout()
+            view.layoutIfNeeded()
+            assertSnapshot(
+                matching: view,
+                as: .image
+            )
+            // no layout assertions, we just check the generated screenshots
             return .success(view)
         }
     }
