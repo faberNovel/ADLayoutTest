@@ -21,7 +21,7 @@ We can leverage the same idea to make snapshot tests.
 
 ### Example
 
-You can find an example of use in the [Example](/tree/master/Example) directory.
+You can find an example of use in the [Example](/Example) directory.
 
 Let's say we use the following view in our app, and we want to test it:
 
@@ -205,10 +205,10 @@ For this, import a snapshot testing library (in the example we use [SnapshotTest
 
 You can find some useful predefined generators that you can use to create your random inputs.
 
-- [`Gen<Character>`](/blob/master/ADLayoutTest/Classes/Gen+Character.swift): `.upper`, `.lower`, `.numeric`, `.special`, `.hexDigits`
-- [`Gen<String>`](/blob/master/ADLayoutTest/Classes/Gen+String.swift): `.word`, `.words`, `.sentences`, `email` (word and sentences are built with lorem ipsum content)
-- [`Gen<UIColor>`](/blob/master/ADLayoutTest/Classes/Gen+UIColor.swift): `.color`
-- [`Gen<UIImage>`](/blob/master/ADLayoutTest/Classes/Gen+UIImage.swift): `.image(min:max:)`
+- [`Gen<Character>`](/ADLayoutTest/Classes/Gen+Character.swift): `.upper`, `.lower`, `.numeric`, `.special`, `.hexDigits`
+- [`Gen<String>`](/ADLayoutTest/Classes/Gen+String.swift): `.word`, `.words`, `.sentences`, `email` (word and sentences are built with lorem ipsum content)
+- [`Gen<UIColor>`](/ADLayoutTest/Classes/Gen+UIColor.swift): `.color`
+- [`Gen<UIImage>`](/ADLayoutTest/Classes/Gen+UIImage.swift): `.image(min:max:)`
 
 Feel free to leverage the `Gen` type to create your own generators. You can find all the documentation on the [SwiftCheck](https://github.com/typelift/SwiftCheck/blob/master/Sources/SwiftCheck/Gen.swift) page.
 
