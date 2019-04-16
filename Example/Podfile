@@ -1,11 +1,25 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'ADLayoutTest_Example' do
   pod 'ADLayoutTest', :path => '../'
 
   target 'ADLayoutTest_Tests' do
     inherit! :search_paths
+  end
 
-    
+  target 'ADLayoutTest_ExampleTests' do
+    pod 'SnapshotTesting', '~> 1.5'
+    inherit! :search_paths
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == "SwiftCheck"
+      target.build_configurations.each do |config|
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+      end
+    end
   end
 end

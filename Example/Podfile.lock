@@ -1,0 +1,31 @@
+PODS:
+  - ADAssertLayout (0.1.0)
+  - ADLayoutTest (0.1.0):
+    - ADAssertLayout (~> 0.1)
+    - SwiftCheck (~> 0.12)
+  - SnapshotTesting (1.5.0)
+  - SwiftCheck (0.12.0)
+
+DEPENDENCIES:
+  - ADLayoutTest (from `../`)
+  - SnapshotTesting (~> 1.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ADAssertLayout
+    - SnapshotTesting
+    - SwiftCheck
+
+EXTERNAL SOURCES:
+  ADLayoutTest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ADAssertLayout: bb52c24de5c1e320cef2460c9df427e95033435c
+  ADLayoutTest: 61b85fb67ac0ed11a322ea9ea23007722fa99c5d
+  SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
+  SwiftCheck: d1dd04d955cc76620b0f84e087536bd059a11c24
+
+PODFILE CHECKSUM: 753d5856e1be913722c8f478bb67cb0c73d80341
+
+COCOAPODS: 1.6.1
