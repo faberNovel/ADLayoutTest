@@ -351,8 +351,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADLayoutTest_Example/Pods-ADLayoutTest_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ADAssertLayout/ADAssertLayout.framework",
@@ -360,8 +358,6 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftCheck/SwiftCheck.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADAssertLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADLayoutTest.framework",
@@ -421,15 +417,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ADLayoutTest_ExampleTests/Pods-ADLayoutTest_ExampleTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapshotTesting.framework",
 			);
