@@ -1,6 +1,6 @@
 import_from_git(url: ENV['FASTLANE_URL'],
                 path: 'Fastfile_ios.rb',
-                branch: 'v6.2.0')
+                branch: 'v6.3.0')
 
 #####################################################
 # @!group Configuration
