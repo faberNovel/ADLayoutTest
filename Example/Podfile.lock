@@ -1,6 +1,6 @@
 PODS:
   - ADAssertLayout (0.1.0)
-  - ADLayoutTest (0.1.0):
+  - ADLayoutTest (0.1.1):
     - ADAssertLayout (~> 0.1)
     - SwiftCheck (~> 0.12)
   - SnapshotTesting (1.5.0)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ADAssertLayout: bb52c24de5c1e320cef2460c9df427e95033435c
-  ADLayoutTest: 9a7f38caedd6617e85e4d7aa68665be56c642dfd
+  ADLayoutTest: 2ae096679ebe68612f649984fcfe9215455167b7
   SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
   SwiftCheck: d1dd04d955cc76620b0f84e087536bd059a11c24
 

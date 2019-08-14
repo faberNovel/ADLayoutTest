@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ADLayoutTest'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Random layout tests.'
   s.homepage         = 'https://github.com/applidium/ADLayoutTest'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
