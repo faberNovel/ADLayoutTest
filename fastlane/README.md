@@ -40,6 +40,11 @@ Release a new version
 fastlane publish_release
 ```
 Publish release
+### create_release_pr
+```
+fastlane create_release_pr
+```
+Create release PR
 
 ----
 

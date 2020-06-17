@@ -1,0 +1,20 @@
+name: CD
+
+on:
+  create:
+    branches:
+      - release/*
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Bundle install
+      run: bundle install
+    - name: Prepare release
+      env:
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+      run: bundle exec fastlane create_release_pr
