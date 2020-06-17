@@ -17,9 +17,9 @@ struct ExampleViewModel {
 
 class ExampleView: UIView {
 
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var label: UILabel!
-    @IBOutlet var subLabel: UILabel!
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var label: UILabel!
+    @IBOutlet private var subLabel: UILabel!
 
     // MARK: - Public
 

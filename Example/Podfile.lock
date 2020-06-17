@@ -5,10 +5,12 @@ PODS:
     - SwiftCheck (~> 0.12)
   - SnapshotTesting (1.7.2)
   - SwiftCheck (0.12.0)
+  - SwiftLint (0.39.2)
 
 DEPENDENCIES:
   - ADLayoutTest (from `../`)
   - SnapshotTesting (~> 1.5)
+  - SwiftLint (~> 0.39)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -16,6 +18,7 @@ SPEC REPOS:
   trunk:
     - ADAssertLayout
     - SnapshotTesting
+    - SwiftLint
 
 EXTERNAL SOURCES:
   ADLayoutTest:
@@ -26,7 +29,8 @@ SPEC CHECKSUMS:
   ADLayoutTest: 1da1b51c7aeab8297e13b623b1af34b393fc927c
   SnapshotTesting: 8caa6661fea7c8019d5b46de77c16bab99c36c5c
   SwiftCheck: d1dd04d955cc76620b0f84e087536bd059a11c24
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 753d5856e1be913722c8f478bb67cb0c73d80341
+PODFILE CHECKSUM: 69e048779b8f5015b72312461cdcbc629629ed8f
 
 COCOAPODS: 1.9.1

@@ -95,6 +95,7 @@ extension XCTestCase {
                                   file: StaticString = #file,
                                   line: UInt = #line,
                                   run: @escaping (A) -> ViewAssertionResult) where A: Arbitrary {
+        // swiftlint:disable:next closure_body_length
         XCTContext.runActivity(named: named) { activity in
             var snapshotView: UIView?
             var layoutError: LayoutError?
@@ -151,4 +152,3 @@ extension XCTestCase {
         }
     }
 }
-

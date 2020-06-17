@@ -12,12 +12,15 @@ import SwiftCheck
 import SnapshotTesting
 @testable import ADLayoutTest_Example
 
+// swiftlint:disable redundant_type_annotation
+
 extension UIView {
     class func fromNib<T: UIView>() -> T {
         return fromNib(named: String(describing: T.self))
     }
 
     class func fromNib<T: UIView>(named: String) -> T {
+        // swiftlint:disable:next force_unwrapping force_cast
         return Bundle(for: T.self).loadNibNamed(named, owner: nil, options: nil)![0] as! T
     }
 }
@@ -35,6 +38,7 @@ extension ExampleViewModel: Arbitrary {
     }
 }
 
+// swiftlint:disable:next type_name
 class ADLayoutTest_ExampleTests: XCTestCase {
 
     func testExampleView() {
