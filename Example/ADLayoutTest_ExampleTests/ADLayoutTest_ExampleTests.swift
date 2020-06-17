@@ -81,8 +81,8 @@ class ADLayoutTest_ExampleTests: XCTestCase {
         }
     }
 
-    // This test should fail
-    func testExampleViewError() {
+    // This test should fail, rename to testExampleViewError to try
+    func failure_testExampleViewError() {
 
         runLayoutTests(named: "ExampleView Overlap") { (viewModel: ExampleViewModel) in
             let view: ExampleView = ExampleView.fromNib(named: "ExampleViewError")
