@@ -249,7 +249,7 @@ $ pod install
 ## Communication
 
 - If you **need help**, use [Twitter](https://twitter.com/FabernovelTech).
-- If you'd like to **ask a general question**, use [Twitter](https://www.fabernovel.com/).
+- If you'd like to **ask a general question**, use [Twitter](https://twitter.com/FabernovelTech).
 - If you'd like to **apply for a job**, visit [https://careers.fabernovel.com/](https://careers.fabernovel.com/).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
