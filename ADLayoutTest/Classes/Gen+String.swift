@@ -16,15 +16,21 @@ extension String {
 }
 
 func glue(_ parts: [Gen<String>]) -> Gen<String> {
-    return sequence(parts).map { $0.reduce("", +) }
+    return sequence(parts).map {
+        $0.reduce(into: "") { (result, part) in
+            result.append(part)
+        }
+    }
 }
 
 extension Gen where A == String {
 
     private static let lipsumWord: Gen<String> = {
+        // swiftlint:disable line_length
         let text = """
 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod.
 """
+        // swiftlint:enable line_length
         let words = text
             .replacingOccurrences(of: ".", with: "")
             .replacingOccurrences(of: ",", with: "")
