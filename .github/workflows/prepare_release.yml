@@ -1,15 +1,14 @@
 name: Create release PRs
 
 on:
-  create:
-    branches:
-      - release/*
+  create
 
 jobs:
   build:
 
     runs-on: macOS-latest
 
+    if: contains(github.ref, 'release') # allow to filter on release branches only
     steps:
     - uses: actions/checkout@v2
     - name: Bundle install
