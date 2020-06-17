@@ -54,7 +54,8 @@ lane :publish_release do
     api_token: ENV["GITHUB_TOKEN"],
     name: "v#{target_version}",
     tag_name: "v#{target_version}",
-    description: changelog
+    description: changelog,
+    commitish: "master"
   )
 
   pod_push
