@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ADLayoutTest.svg?style=flat)](https://cocoapods.org/pods/ADLayoutTest)
 [![License](https://img.shields.io/cocoapods/l/ADLayoutTest.svg?style=flat)](https://cocoapods.org/pods/ADLayoutTest)
 [![Platform](https://img.shields.io/cocoapods/p/ADLayoutTest.svg?style=flat)](https://cocoapods.org/pods/ADLayoutTest)
+![](https://github.com/faberNovel/ADLayoutTest/workflows/CI/badge.svg)
 
 ADLayoutTest is an example of implementation of property based testing for UI layouts.
 
@@ -215,7 +216,7 @@ Feel free to leverage the `Gen` type to create your own generators. You can find
 ## Requirements
 
 - iOS 9.0+
-- Swift 4.2
+- Swift 5.1
 
 ## Installation
 
@@ -247,16 +248,16 @@ $ pod install
 
 ## Communication
 
-- If you **need help**, use [Twitter](https://twitter.com/applidium).
-- If you'd like to **ask a general question**, use [Twitter](https://twitter.com/applidium).
-- If you'd like to **apply for a job**, [email us](jobs@applidium.com).
+- If you **need help**, use [Twitter](https://twitter.com/FabernovelTech).
+- If you'd like to **ask a general question**, use [Twitter](https://twitter.com/FabernovelTech).
+- If you'd like to **apply for a job**, visit [https://careers.fabernovel.com/](https://careers.fabernovel.com/).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
 ## Credits
 
-ADLayoutTest is owned and maintained by [Fabernovel Technologies](https://technologies.fabernovel.com/). You can follow us on Twitter at [@applidium](https://twitter.com/applidium).
+ADLayoutTest is owned and maintained by [Fabernovel](https://www.fabernovel.com/). You can follow us on Twitter at [@FabernovelTech](https://twitter.com/FabernovelTech).
 
 ## License
 
