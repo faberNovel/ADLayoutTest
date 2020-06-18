@@ -50,7 +50,7 @@ lane :publish_release do
     section_identifier: "[#{target_version}]"
   )
   set_github_release(
-    repository_name: "faberNovel/ADLayoutTest",
+    repository_name: ENV["REPO"],
     api_token: ENV["GITHUB_TOKEN"],
     name: "v#{target_version}",
     tag_name: "v#{target_version}",
@@ -68,7 +68,7 @@ lane :create_release_pr do
   ["master", "develop"].each do |base|
     create_pull_request(
       api_token: ENV["GITHUB_TOKEN"],
-      repo: "faberNovel/ADLayoutTest",
+      repo: ENV["REPO"],
       title: "Release #{target_version_from_branch}",
       base: base
     )
