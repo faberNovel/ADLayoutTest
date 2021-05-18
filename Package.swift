@@ -15,7 +15,7 @@ let package = Package(
 	targets: [
 		.target(
 			name: "ADLayoutTest",
-      			path: "ADLayoutTest",
-			dependencies: ["ADAssertLayout", "SwiftCheck"])
+			dependencies: ["ADAssertLayout", "SwiftCheck"],
+      			path: "ADLayoutTest")
 	]
 )
