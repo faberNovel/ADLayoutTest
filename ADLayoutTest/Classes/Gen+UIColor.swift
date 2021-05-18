@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftCheck
 
 extension Gen where A == UIColor {
