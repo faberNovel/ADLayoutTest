@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftCheck
+import UIKit
 
 extension Gen where A == Character {
 
